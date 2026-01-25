@@ -1,9 +1,9 @@
 
 def factorial(Size):
-    sum=1
+    fact=1
     for i in range(1,Size+1):
-        sum=sum*i
-    print(sum)
+        fact=fact*i
+    print(fact)
 
 def main():    
     Size=int(input(" Enter the Number=>"))

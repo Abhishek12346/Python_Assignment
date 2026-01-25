@@ -1,0 +1,10 @@
+no=5
+for i in range(no,0,-1):
+
+    for _ in range(i):
+        print("*",end=" ")   
+    
+    for _ in range(no-i):   
+        print(" ",end=" ")
+
+    print(" ")    
