@@ -1,12 +1,13 @@
-class Arithmetic:
+class Arithmatic:
 
     def __init__(self):
-        self.Value1 = 0
-        self.Value2 = 0
+        self.Value1=0
+        self.Value2=0
 
     def Accept(self):
-        self.Value1 = int(input("Enter first value: "))
-        self.Value2 = int(input("Enter second value: "))
+
+        self.Value1=int(input("Enter the Value 1st =>"))
+        self.Value2=int(input("Enter the Value 2nd =>"))
 
     def Addition(self):
         return self.Value1 + self.Value2
@@ -23,23 +24,22 @@ class Arithmetic:
         else:
             return "Division by zero not allowed"
 
+A1 = Arithmatic()
 
-# create multiple objects
-obj1 = Arithmetic()
-obj2 = Arithmetic()
+A1.Accept()
+print("-"*44)
 
-# object 1
-obj1.Accept()
-print("Addition =", obj1.Addition())
-print("Subtraction =", obj1.Subtraction())
-print("Multiplication =", obj1.Multiplication())
-print("Division =", obj1.Division())
+print("Addition =", A1.Addition())
+print("Subtraction =", A1.Subtraction())
+print("Multiplication =", A1.Multiplication())
+print("Division =", A1.Division())
 
-print("------------")
+A2 = Arithmatic()
+print("-"*45)
 
-# object 2
-obj2.Accept()
-print("Addition =", obj2.Addition())
-print("Subtraction =", obj2.Subtraction())
-print("Multiplication =", obj2.Multiplication())
-print("Division =", obj2.Division())
+A2.Accept()
+print("-"*45)
+print("Addition =", A2.Addition())
+print("Subtraction =", A2.Subtraction())
+print("Multiplication =", A2.Multiplication())
+print("Division =", A2.Division())

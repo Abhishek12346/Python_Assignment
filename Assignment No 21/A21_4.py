@@ -22,8 +22,6 @@ def main():
         data.append(Num)
     print("Data of the List =>",data) 
 
-   
-
     t1=threading.Thread(target=sum_element,args=(data,))
     t2=threading.Thread(target=Product,args=(data,))
 
